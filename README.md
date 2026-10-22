@@ -31,6 +31,30 @@ resource integrity verification, and safeguards against overwriting user files.
 `zapret-obfs.lua` already implements it. The same filename existed as an
 official upstream file in older releases.
 
+## Search capability descriptions (schema 1)
+
+[Optional reviewed descriptors](inventory/capabilities.json) are separate from
+the source/provenance inventory. A descriptor names an actual shipped resource,
+its supported protocol/transport, native action or exported Lua function, and
+exact dependencies/arguments. The current initial examples cover one TLS
+ClientHello payload and one custom Lua desync function; they are **not** a
+permanent list of allowed files, a claim of bypass success, or instructions to
+load every Lua module.
+
+The integration must look up descriptors by **files actually present** in the
+installed `ResourceInventory`. New resources can be described in JSON without
+changing Python source; removed/unreadable resources are never made executable
+by lingering metadata. Files with no supported, verified capability remain
+visible but **unsupported**, not silently guessed by filename. Adding a new
+native action beyond the plugin's supported renderer remains a code feature,
+not an arbitrary executable-string escape hatch.
+
+Run `python3 scripts/verify_inventory.py` before publishing. It checks
+real source bytes against the Git blob SHA and size, rejects duplicate and
+symlink files, and checks descriptor paths, formats, exports and arguments.
+This is a **catalog integrity** check; operational strategy results require
+separate installed OPNsense tests.
+
 ## Licenses and attribution
 
 See [LICENSE](LICENSE) for original packaging materials,
