@@ -13,7 +13,7 @@ import pathlib
 import re
 import sys
 
-SAFE_NAME = re.compile(r"^[A-Za-z0-9_][A-Za-z0-9_.-]*$")
+SAFE_NAME = re.compile(r"^[A-Za-z0-9_][A-Za-z0-9_.+-]*$")
 SAFE_VALUE = re.compile(r"^[A-Za-z0-9_,.+-]+$")
 GIT_SHA = re.compile(r"^[0-9a-f]{40}$")
 
@@ -82,7 +82,6 @@ def check_capabilities(root: pathlib.Path, registered: dict[str, dict],
         if entry.get("transport") not in {"tcp", "udp"}:
             errors.append(f"unsupported transport descriptor: {target}")
         if not isinstance(entry.get("family"), str) or not SAFE_NAME.fullmatch(entry["family"]):
-            # Established families may include '+', which is permitted by SAFE_NAME.
             errors.append(f"invalid family descriptor: {target}")
         if expected_kind == "blob":
             if entry.get("native_action") not in {"fake", "seqovl"}:
