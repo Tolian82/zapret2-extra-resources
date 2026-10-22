@@ -1,0 +1,85 @@
+# Third-party notices and provenance
+
+This repository is a curated redistribution of supplementary resources for
+**bol-van/zapret2**. No authorship transfer or relicensing of third-party
+Lua files or binary payload captures is implied by this repository.
+
+## Primary upstream project
+
+- **bol-van**, official **zapret2**, https://github.com/bol-van/zapret2
+- License: MIT, Copyright (c) 2016-2026 bol-van
+- Notice preserved at `licenses/bol-van-zapret2-MIT.txt`
+- For compatibility, resources already present in upstream Git tree `v1.0.6`
+  and the upstream master checked on 2026-10-22 were omitted by exact Git
+  blob content and by destination path. That is not a promise for future
+  upstream releases or all versions supported by the main plugin.
+
+## Extended Lua ecosystem / Zapret GUI
+
+- **Zapret GUI**, maintained by **loop-uh** (copyright holder recorded as
+  **censorliber**, 2025-2026), https://git.zapret.moe/zapretdiscordyoutube/zapretgui
+- License: MIT; `licenses/censorliber-zapretgui-MIT.txt`
+- The documented relationship between Zapret GUI and modules such as
+  `custom_funcs.lua`, `zapret-16kb.lua`, `zapret-multishake.lua`,
+  `fakemultisplit.lua`, `fakemultidisorder.lua`, and the detector modules is
+  described at https://github.com/RixyPow/netzapret/blob/main/docs/THIRD-PARTY.md
+- Certain functions and examples have been contributed through community
+  discussions over time; this credit is not an exhaustive line-by-line
+  identification of individual function authors.
+
+## Binary payload collection and additional Lua modules
+
+- **avatarDD**, `avatarDD/zapret-gui`,
+  https://github.com/avatarDD/zapret-gui
+- License: MIT, Copyright (c) 2026 avatarDD; see
+  `licenses/avatarDD-zapret-gui-MIT.txt`
+- Source files and exact pinned Git object hashes are recorded
+  **per file** in `inventory/sources.json`. Included .bin files from this
+  source are packet payload data rather than executable software; ownership
+  of every originating packet capture is not individually ascertainable
+  from its filename alone.
+- Many Lua files in `lua/` also use this source for their selected edition.
+
+## User-provided modified editions of Lua
+
+- **AmantesNihilo**, `zapret-universal-interface`,
+  https://github.com/AmantesNihilo/zapret-universal-interface
+- License: MIT, Copyright (c) 2026 amantesnihilo; see
+  `licenses/AmantesNihilo-MIT.txt`
+- Selected editions of `custom_diag.lua`, `custom_funcs.lua`,
+  `init_vars.lua`, `zapret-16kb.lua` and `zapret-multishake.lua`
+  are exact matches to this public source. These are derivative community
+  Lua modules and may contain earlier code by bol-van, loop-uh/censorliber
+  and other contributors. This listing does not claim that AmantesNihilo
+  wrote each function.
+
+## Unresolved origin — one user-supplied BLOB
+
+- `files/fake/tls_clienthello_max_ru_extended.bin` (654 bytes; packet
+  capture content, **not** the 193-byte `tls_clienthello_max_ru.bin`).
+- Supplied by the project owner in an archive as
+  `fake/tls_clienthello_max_ru.bin`.
+- SHA-256:
+  `e4a94cec50b3c048eb988a513ee28191e4d7544dd5f98a9bf94f37ee02d2568e`
+- Its individual creator, capture source, and a standalone redistribution
+  license have **not** been verified. Listing the packet payload here is
+  not evidence that it is MIT-licensed. Please send provenance or a
+  copyright concern via the repository issue tracker.
+
+## Scope and duplicate policy
+
+- `lua/zapret-wgobfs.lua` is intentionally absent. Its `wgobfs` function
+  is already present in official `lua/zapret-obfs.lua` for modern zapret2.
+- Multiple names with identical Git blob contents are represented by a
+  single canonical file. Other names are documented in `docs/ALIASES.md`.
+- Extra resources are **not automatically loaded or activated**. Users
+  should select strategies and module combinations consciously.
+- File-level attribution can be improved as new original-source evidence
+  is discovered. No single project claims ownership of every packet
+  payload or every function.
+
+## Contact
+
+To propose corrections, identify a more original source, or request removal
+of material where rights are disputed, open an issue:
+https://github.com/Tolian82/zapret2-extra-resources/issues

@@ -1,18 +1,49 @@
 # Zapret2 Extra Resources
 
-Additional Lua modules and packet payload (BLOB) files for [bol-van/zapret2](https://github.com/bol-van/zapret2), curated for use by [os-zapret2-restyle](https://github.com/Tolian82/os-zapret2-restyle).
+A supplementary, deduplicated Lua and fake-packet BLOB catalog for
+[bol-van/zapret2](https://github.com/bol-van/zapret2), intended to be
+integrated with [os-zapret2-restyle](https://github.com/Tolian82/os-zapret2-restyle)
+on OPNsense in a **separate later plugin change**.
 
-- `lua/`: supplementary modules (not loaded automatically).
-- `files/fake/`: supplementary payloads (not injected automatically).
-- `manifest.json`: immutable resource inventory with source references and Git blob hashes.
-- `LICENSE`, `NOTICE`, `CONTRIBUTORS.md`, `licenses/`: attribution and third-party licensing.
+## Contents (2026-10-22)
 
-**No upstream files intentionally repackaged.** Files duplicate to the official bol-van/zapret2 `v1.0.6` tree by Git blob content or by target path are excluded. Files matching one another exactly are deduplicated; see `docs/ALIASES.md`. The official release may change: future installers must check collisions with their selected runtime version.
+- **19** Lua modules in [lua/](lua/).
+- **54** unique BIN payloads in [files/fake/](files/fake/).
+- **73** actual resource files. No duplicate contents among these files
+  according to their Git blob SHA values.
+- Full source paths and per-file Git blob hashes in
+  [inventory/sources.json](inventory/sources.json).
+- Duplicate filename references and canonical names in
+  [docs/ALIASES.md](docs/ALIASES.md).
 
-**Important:** This repository is a resource catalog, not an endorsement that every payload works or every supplementary Lua module can be loaded together. The plugin's existing Strategy configurations must be respected. Publishing resources does not install them automatically on OPNsense.
+Files identical to officially shipped bol-van/zapret2 resources have been
+excluded, comparing both upstream `v1.0.6` and `master` at the time of
+publication. Resources with different content but similar names may exist.
+Future upstream changes require another comparison before installation.
 
-## Sources and legal
+**Compatibility and availability:** This is a collection, not an assurance
+that each strategy works or all Lua modules can be loaded together. Publishing
+these files neither installs them on OPNsense nor modifies a Zapret2 service.
+The plugin integration must implement collision checks, proper rollback,
+resource integrity verification, and safeguards against overwriting user files.
 
-This repository contains redistributed resources from several community projects. See [NOTICE](NOTICE), [CONTRIBUTORS.md](CONTRIBUTORS.md), and [licenses](licenses/) for attribution and preserved license texts. The top-level MIT LICENSE applies only to original material of this repository, **not as a claim of authorship or new license grant over third-party files**. Missing precise authorship is documented openly; please send corrections with supporting links.
+**The `wgobfs` script is not included** because current official
+`zapret-obfs.lua` already implements it. The same filename existed as an
+official upstream file in older releases.
 
-Source origins include [avatarDD/zapret-gui](https://github.com/avatarDD/zapret-gui) and [AmantesNihilo/zapret-universal-interface](https://github.com/AmantesNihilo/zapret-universal-interface). Official Zapret2 is maintained by bol-van.
+## Licenses and attribution
+
+See [LICENSE](LICENSE) for original packaging materials,
+[NOTICE](NOTICE) and [CONTRIBUTORS.md](CONTRIBUTORS.md) for provenance, and
+[licenses/](licenses/) for preserved MIT third-party notices. Not every
+source author and packet capture origin is identifiable. In particular,
+`files/fake/tls_clienthello_max_ru_extended.bin` is an unverified
+provenance exception, clearly called out in NOTICE.
+
+## Updating resources
+
+- Prefer reviewed, pinned Git revisions and sources with attributable rights.
+- Keep only one physical file for each exact Git blob payload.
+- Never override a bol-van/zapret2 file or a user's custom file silently.
+- Do not rename an existing strategy dependency without migration.
+- Refresh `inventory/sources.json` whenever resources change.
