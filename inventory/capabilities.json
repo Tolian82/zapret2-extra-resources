@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "description": "Optional, reviewed executable-search capability descriptors; absence means unsupported, not missing.",
+  "resources": [
+    {
+      "target": "files/fake/tls_clienthello_1.bin",
+      "kind": "blob",
+      "format": "tls-clienthello",
+      "transport": "tcp",
+      "protocol": "tls13",
+      "family": "fake",
+      "native_action": "fake",
+      "argument": "blob",
+      "evidence": "TLS record (content validated, not inferred from filename)"
+    },
+    {
+      "target": "lua/fakemultisplit.lua",
+      "kind": "lua",
+      "role": "desync",
+      "transport": "tcp",
+      "protocol": "tls13",
+      "family": "fake+split",
+      "export": "fakemultisplit",
+      "dependencies": [
+        "zapret-lib.lua",
+        "zapret-antidpi.lua"
+      ],
+      "arguments": [
+        {
+          "name": "fake_blob",
+          "value": "fake_default_tls"
+        },
+        {
+          "name": "pos",
+          "value": "1"
+        }
+      ],
+      "evidence": "Exported top-level function with explicit fake_blob and pos arguments"
+    }
+  ]
+}
