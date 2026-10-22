@@ -36,7 +36,7 @@ def main() -> int:
             errors.append(f"missing file: {rel}")
             continue
         data = disk.read_bytes()
-        git_sha = hashlib.sha1(b"blob " + str(len(data)).encode("ascii") + b"\\0" + data).hexdigest()
+        git_sha = hashlib.sha1(b"blob " + str(len(data)).encode("ascii") + bytes([0]) + data).hexdigest()
         if git_sha != item["sha"]:
             errors.append(f"hash mismatch: {rel}: expected {item['sha']}, actual {git_sha}")
         if git_sha in seen_sha and seen_sha[git_sha] != rel:
@@ -44,7 +44,7 @@ def main() -> int:
         seen_sha[git_sha] = rel
 
     actual = {
-        str(p.relative_to(root)).replace("\\\\", "/")
+        p.relative_to(root).as_posix()
         for pattern in ("lua/*.lua", "files/fake/*.bin")
         for p in root.glob(pattern)
     }
