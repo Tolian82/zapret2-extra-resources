@@ -1,0 +1,598 @@
+{
+  "schema": 1,
+  "generated_utc_date": "2026-10-22",
+  "upstream_compare": "bol-van/zapret2@v1.0.6",
+  "source_selection": "Recent public MIT repositories, with requested August 2026 modified Lua editions preserved; deduplicated by identical Git blob SHA and checked against upstream path/blob",
+  "total": 73,
+  "counts": {
+    "bin": 54,
+    "lua": 19
+  },
+  "resources": [
+    {
+      "name": "active_discord_udp.bin",
+      "sha": "7c0013b92920c337438b6f3e447152d8033606cf",
+      "size": 1200,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/active_discord_udp.bin",
+      "target": "files/fake/active_discord_udp.bin"
+    },
+    {
+      "name": "active_game_udp.bin",
+      "sha": "7ad95b5d5a2d362c356494974687ab2c2abdf743",
+      "size": 1250,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/active_game_udp.bin",
+      "target": "files/fake/active_game_udp.bin"
+    },
+    {
+      "name": "fake_http_lichess.bin",
+      "sha": "d4565b2ebdeac84757f17e6cf1e8fb3f53e5ae4f",
+      "size": 142,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/fake_http_lichess.bin",
+      "target": "files/fake/fake_http_lichess.bin"
+    },
+    {
+      "name": "fake_http_ovhcloud.bin",
+      "sha": "d25f501d6c1c09af78798f5fcd3484bcd507122d",
+      "size": 143,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/fake_http_ovhcloud.bin",
+      "target": "files/fake/fake_http_ovhcloud.bin"
+    },
+    {
+      "name": "fake_http_postimg.bin",
+      "sha": "67b9b11c910a5324817f02ebfd5cc9c822e14463",
+      "size": 141,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/fake_http_postimg.bin",
+      "target": "files/fake/fake_http_postimg.bin"
+    },
+    {
+      "name": "fake_http_winrar.bin",
+      "sha": "397c80ff4ddfc319e50afa1183a76cf96410adcd",
+      "size": 142,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/fake_http_winrar.bin",
+      "target": "files/fake/fake_http_winrar.bin"
+    },
+    {
+      "name": "fake_quic_3.bin",
+      "sha": "8c3bff4c1e9af767bab8b86a70b6574b974dbde4",
+      "size": 1200,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/fake_quic_3.bin",
+      "target": "files/fake/fake_quic_3.bin"
+    },
+    {
+      "name": "fake_quic.bin",
+      "sha": "11319d2640f4d06dafc7ad02d315579f0c9b4dbc",
+      "size": 1200,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/fake_quic.bin",
+      "target": "files/fake/fake_quic.bin"
+    },
+    {
+      "name": "fake_syndata.bin",
+      "sha": "031c5c28fd91a79023efb1ff2d78b02621040cac",
+      "size": 317,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/fake_syndata.bin",
+      "target": "files/fake/fake_syndata.bin"
+    },
+    {
+      "name": "fake_tls_1.bin",
+      "sha": "a0c2daf083712a0dd53d5c209fb9c2cb8dcd2d96",
+      "size": 225,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/fake_tls_1.bin",
+      "target": "files/fake/fake_tls_1.bin"
+    },
+    {
+      "name": "fake_tls_2.bin",
+      "sha": "d1188e34fd57bb87aa46e5134fdb3f6a93d21de0",
+      "size": 228,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/fake_tls_2.bin",
+      "target": "files/fake/fake_tls_2.bin"
+    },
+    {
+      "name": "fake_tls_3.bin",
+      "sha": "c740462fc090942b1afd571681339ec26af65fd1",
+      "size": 652,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/fake_tls_3.bin",
+      "target": "files/fake/fake_tls_3.bin"
+    },
+    {
+      "name": "fake_tls_4.bin",
+      "sha": "8274fce65a1706d6faf7603a716ccef8b57a53e5",
+      "size": 314,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/fake_tls_4.bin",
+      "target": "files/fake/fake_tls_4.bin"
+    },
+    {
+      "name": "fake_tls_5.bin",
+      "sha": "57cf1311f0f91dfc84c047aec34bdc212fdef460",
+      "size": 306,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/fake_tls_5.bin",
+      "target": "files/fake/fake_tls_5.bin"
+    },
+    {
+      "name": "fake_tls_6.bin",
+      "sha": "9ad5a4bd1d2e31a0150ab127a9033f149336df40",
+      "size": 209,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/fake_tls_6.bin",
+      "target": "files/fake/fake_tls_6.bin"
+    },
+    {
+      "name": "fake_tls_7.bin",
+      "sha": "229e357d05c363d504eea32d9731296bcf6565dc",
+      "size": 226,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/fake_tls_7.bin",
+      "target": "files/fake/fake_tls_7.bin"
+    },
+    {
+      "name": "fake_tls_8.bin",
+      "sha": "bd381b82bcb6f8b97b3b5104bfaaad60995ac3b7",
+      "size": 318,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/fake_tls_8.bin",
+      "target": "files/fake/fake_tls_8.bin"
+    },
+    {
+      "name": "fake_tls_vimeo_com.bin",
+      "sha": "0c2693d647eee9ae656c6b00722c56a0a8d8f534",
+      "size": 290,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/fake_tls_vimeo_com.bin",
+      "target": "files/fake/fake_tls_vimeo_com.bin"
+    },
+    {
+      "name": "http_fake_MS.bin",
+      "sha": "bcd0ba0f0f362013f653eee863769feee5083af8",
+      "size": 274,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/http_fake_MS.bin",
+      "target": "files/fake/http_fake_MS.bin"
+    },
+    {
+      "name": "mts_ch.bin",
+      "sha": "a072ba2c0fa3d62b6a605a4cbdd1597e2fd93be6",
+      "size": 192,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/mts_ch.bin",
+      "target": "files/fake/mts_ch.bin"
+    },
+    {
+      "name": "quic_2.bin",
+      "sha": "16faef7f4808366b91eac725701de4c87bd14326",
+      "size": 136,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/quic_2.bin",
+      "target": "files/fake/quic_2.bin"
+    },
+    {
+      "name": "quic_4.bin",
+      "sha": "1927e61c2d0317152a044b404fa0241190ee5316",
+      "size": 1200,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/quic_4.bin",
+      "target": "files/fake/quic_4.bin"
+    },
+    {
+      "name": "quic_5.bin",
+      "sha": "6cf9aacc747c2e0f45f2b4c45b582641093e080d",
+      "size": 1200,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/quic_5.bin",
+      "target": "files/fake/quic_5.bin"
+    },
+    {
+      "name": "quic_6.bin",
+      "sha": "1d5ddfd7ae449498be9aa848838441600c8b336b",
+      "size": 1200,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/quic_6.bin",
+      "target": "files/fake/quic_6.bin"
+    },
+    {
+      "name": "quic_initial_5ka_ru.bin",
+      "sha": "48a6268ad8d27fb976dc57b4c044f010536425f9",
+      "size": 1250,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/quic_initial_5ka_ru.bin",
+      "target": "files/fake/quic_initial_5ka_ru.bin"
+    },
+    {
+      "name": "quic_initial_dbankcloud_ru.bin",
+      "sha": "6815b5c1bca5208576329d2d749bc2f6e80379e3",
+      "size": 1357,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/quic_initial_dbankcloud_ru.bin",
+      "target": "files/fake/quic_initial_dbankcloud_ru.bin"
+    },
+    {
+      "name": "quic_initial_google_com.bin",
+      "sha": "baf4f8cdc09df6aa9a6cb4d634750182ad455f31",
+      "size": 1357,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/quic_initial_google_com.bin",
+      "target": "files/fake/quic_initial_google_com.bin"
+    },
+    {
+      "name": "quic_initial_lordfilm.bin",
+      "sha": "6155cc8aa005e0556507d138e10c7ce0c4204915",
+      "size": 2400,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/quic_initial_lordfilm.bin",
+      "target": "files/fake/quic_initial_lordfilm.bin"
+    },
+    {
+      "name": "quic_test_00.bin",
+      "sha": "d69eb3f833be7da1a2848ba45690bc14c2001e48",
+      "size": 144,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/quic_test_00.bin",
+      "target": "files/fake/quic_test_00.bin"
+    },
+    {
+      "name": "stun2.bin",
+      "sha": "5f8619f0949c535c0cb5ca52e6271de54d02182e",
+      "size": 120,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/stun2.bin",
+      "target": "files/fake/stun2.bin"
+    },
+    {
+      "name": "syn_packet.bin",
+      "sha": "bbe1e960c780f0e2975096c68e6f7b29b259c2ed",
+      "size": 32,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/syn_packet.bin",
+      "target": "files/fake/syn_packet.bin"
+    },
+    {
+      "name": "t2.bin",
+      "sha": "94aa7691c3e7f7cbc22d7d612e9a5a339e27bf90",
+      "size": 192,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/t2.bin",
+      "target": "files/fake/t2.bin"
+    },
+    {
+      "name": "tls_clienthello_1.bin",
+      "sha": "ff296ee7e2b5685021ae1d0bea03b0754ddafdd3",
+      "size": 517,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_1.bin",
+      "target": "files/fake/tls_clienthello_1.bin"
+    },
+    {
+      "name": "tls_clienthello_10.bin",
+      "sha": "5ea21f11e7d9262a24de6270b3c609f8c32046f1",
+      "size": 305,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_10.bin",
+      "target": "files/fake/tls_clienthello_10.bin"
+    },
+    {
+      "name": "tls_clienthello_11.bin",
+      "sha": "3412da70c729b39f94b47b85899d9f0f46362ecb",
+      "size": 286,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_11.bin",
+      "target": "files/fake/tls_clienthello_11.bin"
+    },
+    {
+      "name": "tls_clienthello_12.bin",
+      "sha": "89006697edecb8244a04e3f234da57070ac0eb45",
+      "size": 289,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_12.bin",
+      "target": "files/fake/tls_clienthello_12.bin"
+    },
+    {
+      "name": "tls_clienthello_13.bin",
+      "sha": "da20101c6753a6e16e2375665eed58b20388cd08",
+      "size": 300,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_13.bin",
+      "target": "files/fake/tls_clienthello_13.bin"
+    },
+    {
+      "name": "tls_clienthello_14.bin",
+      "sha": "59b343ae869a7e80b0c6c200cd634e6c1bca3103",
+      "size": 228,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_14.bin",
+      "target": "files/fake/tls_clienthello_14.bin"
+    },
+    {
+      "name": "tls_clienthello_15.bin",
+      "sha": "cfbb7b7b5b917302561c52e5e86806d7ef4c9b81",
+      "size": 317,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_15.bin",
+      "target": "files/fake/tls_clienthello_15.bin"
+    },
+    {
+      "name": "tls_clienthello_16.bin",
+      "sha": "9b28cc041196d5bd0c0dcb3748f7dc01117329cc",
+      "size": 318,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_16.bin",
+      "target": "files/fake/tls_clienthello_16.bin"
+    },
+    {
+      "name": "tls_clienthello_17.bin",
+      "sha": "33bfb39af9f4a52fc00e9f9fd02445c3a82f3afc",
+      "size": 309,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_17.bin",
+      "target": "files/fake/tls_clienthello_17.bin"
+    },
+    {
+      "name": "tls_clienthello_4pda_to.bin",
+      "sha": "21ac37804ff14244d20868d3a5ca62ef0247a9aa",
+      "size": 284,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_4pda_to.bin",
+      "target": "files/fake/tls_clienthello_4pda_to.bin"
+    },
+    {
+      "name": "tls_clienthello_6.bin",
+      "sha": "a037a8a0f6e9336d2199133f89129499f3048188",
+      "size": 199,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_6.bin",
+      "target": "files/fake/tls_clienthello_6.bin"
+    },
+    {
+      "name": "tls_clienthello_7.bin",
+      "sha": "ec76ea7c7f69e106288b2ec5a168b44dd78df337",
+      "size": 306,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_7.bin",
+      "target": "files/fake/tls_clienthello_7.bin"
+    },
+    {
+      "name": "tls_clienthello_8.bin",
+      "sha": "441598474e1100659e9a9a9d15d5592ffbf8c20f",
+      "size": 280,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_8.bin",
+      "target": "files/fake/tls_clienthello_8.bin"
+    },
+    {
+      "name": "tls_clienthello_9.bin",
+      "sha": "cc3e556115a4e517e1a5624b37299d6ff092f984",
+      "size": 721,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_9.bin",
+      "target": "files/fake/tls_clienthello_9.bin"
+    },
+    {
+      "name": "tls_clienthello_activated.bin",
+      "sha": "39e5f13eecb5ad87a7899c99ae7a940d8b6767ac",
+      "size": 655,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_activated.bin",
+      "target": "files/fake/tls_clienthello_activated.bin"
+    },
+    {
+      "name": "tls_clienthello_chat_deepseek_com.bin",
+      "sha": "2bc2a20ba06686fef67484ea96d2550d7607430f",
+      "size": 517,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_chat_deepseek_com.bin",
+      "target": "files/fake/tls_clienthello_chat_deepseek_com.bin"
+    },
+    {
+      "name": "tls_clienthello_lordfilm.bin",
+      "sha": "7c34e6d5fac562e0285f5751dc191af1cfee691d",
+      "size": 517,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_lordfilm.bin",
+      "target": "files/fake/tls_clienthello_lordfilm.bin"
+    },
+    {
+      "name": "tls_clienthello_max_ru_extended.bin",
+      "target": "files/fake/tls_clienthello_max_ru_extended.bin",
+      "sha": "1fe69d77f12694938beddfbbb204e4319f6bc906",
+      "size": 654,
+      "source_repo": "user-upload",
+      "source_path": "zapret2_additional_unique_bin(1).zip/fake/tls_clienthello_max_ru.bin",
+      "note": "Original user supplied 654-byte variant; authorship not confirmed"
+    },
+    {
+      "name": "tls_clienthello_max_ru.bin",
+      "sha": "9193e45bbf21a938ab0d056b38974f2b10825072",
+      "size": 193,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_max_ru.bin",
+      "target": "files/fake/tls_clienthello_max_ru.bin"
+    },
+    {
+      "name": "tls_clienthello_sochi_park.bin",
+      "sha": "e5fbaa4ff73fca95045c666fda0c52ebe670f817",
+      "size": 244,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_sochi_park.bin",
+      "target": "files/fake/tls_clienthello_sochi_park.bin"
+    },
+    {
+      "name": "tls_clienthello_www_onetrust_com.bin",
+      "sha": "64a1af8bd27d0aee0d06b3293aeeeb163999418b",
+      "size": 664,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/tls_clienthello_www_onetrust_com.bin",
+      "target": "files/fake/tls_clienthello_www_onetrust_com.bin"
+    },
+    {
+      "name": "ya_ch.bin",
+      "sha": "393f9088f38b9d8c17bcb959a308852f15c61733",
+      "size": 191,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/bin/ya_ch.bin",
+      "target": "files/fake/ya_ch.bin"
+    },
+    {
+      "name": "combined-detector.lua",
+      "sha": "dad7e84903611bdc5e16bb8f8b33d3b8e149541e",
+      "size": 46167,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/lua/combined-detector.lua",
+      "target": "lua/combined-detector.lua"
+    },
+    {
+      "name": "custom_diag.lua",
+      "sha": "bc2216c8d7347f00459dcf6db01ba02f1907c71f",
+      "size": 5962,
+      "source_repo": "AmantesNihilo/zapret-universal-interface",
+      "source_path": "resources/zapret2/lua/custom_diag.lua",
+      "target": "lua/custom_diag.lua"
+    },
+    {
+      "name": "custom_funcs.lua",
+      "sha": "0fad95cc67cd8af73e2bf68edc9b314ca71ee148",
+      "size": 147671,
+      "source_repo": "AmantesNihilo/zapret-universal-interface",
+      "source_path": "resources/zapret2/lua/custom_funcs.lua",
+      "target": "lua/custom_funcs.lua"
+    },
+    {
+      "name": "domain-grouping.lua",
+      "sha": "e4c1a98b08bf0f6dad5a5aeb892ab9d49c3533f8",
+      "size": 3928,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/lua/domain-grouping.lua",
+      "target": "lua/domain-grouping.lua"
+    },
+    {
+      "name": "fakemultidisorder.lua",
+      "sha": "2917e9df9c1b93abf7baaa5623bb0c3396bfd870",
+      "size": 8202,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/lua/fakemultidisorder.lua",
+      "target": "lua/fakemultidisorder.lua"
+    },
+    {
+      "name": "fakemultisplit.lua",
+      "sha": "60cd6c0e794bf9f70b149caf533089296424c90c",
+      "size": 5921,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/lua/fakemultisplit.lua",
+      "target": "lua/fakemultisplit.lua"
+    },
+    {
+      "name": "init_vars.lua",
+      "sha": "af1f6d82f75b29e2136735dc7c553a64837952c8",
+      "size": 2009,
+      "source_repo": "AmantesNihilo/zapret-universal-interface",
+      "source_path": "resources/zapret2/lua/init_vars.lua",
+      "target": "lua/init_vars.lua"
+    },
+    {
+      "name": "silent-drop-detector.lua",
+      "sha": "fe9381e325a9c5466501e33c242d0eab54624de4",
+      "size": 1667,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/lua/silent-drop-detector.lua",
+      "target": "lua/silent-drop-detector.lua"
+    },
+    {
+      "name": "strategies.lua",
+      "sha": "b020e2496aa7484900944bf1d0f06797ab182aed",
+      "size": 27393,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/lua/strategies.lua",
+      "target": "lua/strategies.lua"
+    },
+    {
+      "name": "strategy-lock-manager.lua",
+      "sha": "ea9c69dafc868e1a518657c1a5c43a2f624f1c6f",
+      "size": 34574,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/lua/strategy-lock-manager.lua",
+      "target": "lua/strategy-lock-manager.lua"
+    },
+    {
+      "name": "strategy-stats.lua",
+      "sha": "ab16e17f7ceb88608164715c9a4306b15147a4f4",
+      "size": 7956,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/lua/strategy-stats.lua",
+      "target": "lua/strategy-stats.lua"
+    },
+    {
+      "name": "z2k-detectors.lua",
+      "sha": "8fa134ef7ec3f6205d65947c7c73230315a4ef70",
+      "size": 83172,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/lua/z2k-detectors.lua",
+      "target": "lua/z2k-detectors.lua"
+    },
+    {
+      "name": "z2k-fooling-ext.lua",
+      "sha": "a03794decc3abe1b4f3abcb836014e78e9e2cfc0",
+      "size": 2714,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/lua/z2k-fooling-ext.lua",
+      "target": "lua/z2k-fooling-ext.lua"
+    },
+    {
+      "name": "z2k-modern-core.lua",
+      "sha": "cc9db0d9ce4d833070b41ff91697026f162199dd",
+      "size": 28514,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/lua/z2k-modern-core.lua",
+      "target": "lua/z2k-modern-core.lua"
+    },
+    {
+      "name": "z2k-range-rand.lua",
+      "sha": "e5cc379bc293c5ead568f9b81d4dc910249d2e72",
+      "size": 5040,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/lua/z2k-range-rand.lua",
+      "target": "lua/z2k-range-rand.lua"
+    },
+    {
+      "name": "z2k-state-persist.lua",
+      "sha": "0be8c508a72cd6bcd6ad3efd5ed1fa35d896bb6e",
+      "size": 30883,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/lua/z2k-state-persist.lua",
+      "target": "lua/z2k-state-persist.lua"
+    },
+    {
+      "name": "zapret-16kb.lua",
+      "sha": "28164ccd93a205502966faf17c7f451c9f469a87",
+      "size": 12474,
+      "source_repo": "AmantesNihilo/zapret-universal-interface",
+      "source_path": "resources/zapret2/lua/zapret-16kb.lua",
+      "target": "lua/zapret-16kb.lua"
+    },
+    {
+      "name": "zapret-multishake.lua",
+      "sha": "645bf5b68d9b546b0f19b996ba629bdb28df0f94",
+      "size": 30811,
+      "source_repo": "AmantesNihilo/zapret-universal-interface",
+      "source_path": "resources/zapret2/lua/zapret-multishake.lua",
+      "target": "lua/zapret-multishake.lua"
+    },
+    {
+      "name": "zapret-rst-flood.lua",
+      "sha": "4a4e39db4f91dc59adb010838d25b6cf601c1cd3",
+      "size": 8450,
+      "source_repo": "avatarDD/zapret-gui",
+      "source_path": "import/lua/zapret-rst-flood.lua",
+      "target": "lua/zapret-rst-flood.lua"
+    }
+  ]
+}
